@@ -13,7 +13,7 @@ from inference.video_inference import VideoInference
 
 # Initialize FastAPI app
 app = FastAPI(
-    title="VoiceGuard API",
+    title="Deeptrace API",
     description="End-to-End Deepfake Detection System",
     version="1.0.0"
 )
@@ -47,7 +47,7 @@ video_inference = VideoInference()
 async def root():
     """Root endpoint"""
     return {
-        "message": "VoiceGuard API - Deepfake Detection System",
+        "message": "Deeptrace API - Deepfake Detection System",
         "version": "1.0.0",
         "endpoints": {
             "audio": "/predict/audio",
@@ -204,7 +204,7 @@ if __name__ == "__main__":
     import uvicorn
     
     print("=" * 60)
-    print("🛡️ VoiceGuard API Server")
+    print("🛡️ Deeptrace API Server")
     print("=" * 60)
     print(f"Audio Model: {'✓ Loaded' if audio_inference.model else '✗ Not loaded'}")
     print(f"Video Model: {'✓ Loaded' if video_inference.model else '✗ Not loaded'}")

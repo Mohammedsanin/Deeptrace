@@ -15,8 +15,8 @@ except ImportError:
 import shutil
 
 # Paths
-HF_DATASET_PATH = Path("D:/VoiceGuard_Data/deepfake_videos")
-OUTPUT_DIR = Path("D:/VoiceGuard_Data/deepfake_videos_extracted")
+HF_DATASET_PATH = Path("D:/Deeptrace_Data/deepfake_videos")
+OUTPUT_DIR = Path("D:/Deeptrace_Data/deepfake_videos_extracted")
 
 def extract_videos():
     """Extract videos from HuggingFace dataset"""

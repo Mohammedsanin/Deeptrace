@@ -4,7 +4,7 @@ from pathlib import Path
 # Base directories
 BASE_DIR = Path(__file__).parent
 # Use D: drive for large datasets to avoid space issues on C:
-DATA_DIR = Path("D:/VoiceGuard_Data")
+DATA_DIR = Path("D:/Deeptrace_Data")
 MODELS_DIR = BASE_DIR / "saved_models"
 UPLOADS_DIR = BASE_DIR / "uploads"
 

@@ -1,8 +1,8 @@
-# 🛡️ VoiceGuard - End-to-End Deepfake Detection System
+# 🛡️ Deeptrace - End-to-End Deepfake Detection System
 
 A comprehensive AI-powered deepfake detection system that analyzes both audio and video content using deep learning models. Features a modern React frontend and Python FastAPI backend.
 
-![VoiceGuard](https://img.shields.io/badge/AI-Deepfake%20Detection-purple)
+![Deeptrace](https://img.shields.io/badge/AI-Deepfake%20Detection-purple)
 ![Python](https://img.shields.io/badge/Python-3.9+-blue)
 ![React](https://img.shields.io/badge/React-18.2-61dafb)
 ![PyTorch](https://img.shields.io/badge/PyTorch-2.1-red)

@@ -8,7 +8,7 @@ function HistoryPanel({ onHistoryItemClick }) {
 
     useEffect(() => {
         // Load history from localStorage
-        const savedHistory = localStorage.getItem('voiceguard_history')
+        const savedHistory = localStorage.getItem('deeptrace_history')
         if (savedHistory) {
             setHistory(JSON.parse(savedHistory))
         }
@@ -16,7 +16,7 @@ function HistoryPanel({ onHistoryItemClick }) {
 
     const clearHistory = () => {
         if (confirm('Are you sure you want to clear all history?')) {
-            localStorage.removeItem('voiceguard_history')
+            localStorage.removeItem('deeptrace_history')
             setHistory([])
         }
     }
@@ -25,7 +25,7 @@ function HistoryPanel({ onHistoryItemClick }) {
         e.stopPropagation()
         const newHistory = history.filter((_, i) => i !== index)
         setHistory(newHistory)
-        localStorage.setItem('voiceguard_history', JSON.stringify(newHistory))
+        localStorage.setItem('deeptrace_history', JSON.stringify(newHistory))
     }
 
     const formatTimestamp = (timestamp) => {
@@ -122,14 +122,14 @@ export const addToHistory = (filename, result) => {
         timestamp: Date.now()
     }
 
-    const savedHistory = localStorage.getItem('voiceguard_history')
+    const savedHistory = localStorage.getItem('deeptrace_history')
     let history = savedHistory ? JSON.parse(savedHistory) : []
 
     // Add to beginning and limit to 10 items
     history.unshift(historyItem)
     history = history.slice(0, 10)
 
-    localStorage.setItem('voiceguard_history', JSON.stringify(history))
+    localStorage.setItem('deeptrace_history', JSON.stringify(history))
 }
 
 export default HistoryPanel

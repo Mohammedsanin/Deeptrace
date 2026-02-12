@@ -19,7 +19,7 @@ function Header() {
                             </svg>
                         </div>
                         <div className="logo-text">
-                            <h1 className="gradient-text">VoiceGuard</h1>
+                            <h1 className="gradient-text">Deeptrace</h1>
                             <p className="tagline">AI-Powered Deepfake Detection</p>
                         </div>
                     </div>

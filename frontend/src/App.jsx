@@ -107,7 +107,7 @@ function App() {
 
             <footer className="footer">
                 <div className="container">
-                    <p>VoiceGuard © 2024 - Advanced Deepfake Detection System</p>
+                    <p>Deeptrace © 2024 - Advanced Deepfake Detection System</p>
                 </div>
             </footer>
         </div>

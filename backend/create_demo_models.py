@@ -1,5 +1,5 @@
 """
-Demo/Mock Models for VoiceGuard
+Demo/Mock Models for Deeptrace
 This creates pre-initialized models for demonstration purposes
 without requiring dataset training.
 """
@@ -49,7 +49,7 @@ def create_demo_video_model():
 
 if __name__ == "__main__":
     print("=" * 60)
-    print("Creating Demo Models for VoiceGuard")
+    print("Creating Demo Models for Deeptrace")
     print("=" * 60)
     print("\nNote: These are untrained models for demonstration purposes.")
     print("They will make random predictions until properly trained.\n")
